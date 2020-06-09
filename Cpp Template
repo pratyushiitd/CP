@@ -2,34 +2,34 @@
 using namespace std;
 
 #define get_ch getchar_unlocked
-#define fo(i, n) for(i=0; i<n; i++)
-#define Fo(i, k, n) for(i=k; k<n?i<n:i>n; k<n?i++:i--)
+#define fo(i, n) for(int i=0; i<n; i++)
+#define Fo(i, k, n) for(int i=k; k<n?i<n:i>n; k<n?i++:i--)
 #define ll long long
 #define ld long double
 #define all(x) x.begin(), x.end()
+#define is_sorted(v) std::is_sorted(v.begin(), v.end())
 
-typedef pair<int, int> pii
-typedef pair<ll, ll> pll
-typedef vector<int> vi
-typedef vector<ll> vll
-typedef vector<pll> vpll
-typedef vector<pii> vpii
-typedef set<int> Si
-typedef set<ll> Sll
-typedef set<pii> Spii
-typedef set<pll> Spll
-typedef map<int, int> Mii
-typedef map<ll, ll> Mll
-typedef vector<vi> vvi
-typedef vector<vll> vvll
-const int mod = 1'000'000'007
-const int pi = 3.1415926535897932384626
-const int e = 2.71828182845904523536
+typedef pair<int, int> pii;
+typedef pair<ll, ll> pll;
+typedef vector<int> vi;
+typedef vector<ll> vll;
+typedef vector<pll> vpll;
+typedef vector<pii> vpii;
+typedef set<int> Si;
+typedef set<ll> Sll;
+typedef set<pii> Spii;
+typedef set<pll> Spll;
+typedef map<int, int> Mii;
+typedef map<ll, ll> Mll;
+typedef vector<vi> vvi;
+typedef vector<vll> vvll;
+const int mod = 1'000'000'007;
+const int pi = 3.1415926535897932384626;
+const int e = 2.71828182845904523536;
 
 
 
 void solve(){
-    
     
 }
 
