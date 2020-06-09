@@ -1,0 +1,50 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define get_ch getchar_unlocked
+#define fo(i, n) for(i=0; i<n; i++)
+#define Fo(i, k, n) for(i=k; k<n?i<n:i>n; k<n?i++:i--)
+#define ll long long
+#define ld long double
+#define all(x) x.begin(), x.end()
+
+typedef pair<int, int> pii
+typedef pair<ll, ll> pll
+typedef vector<int> vi
+typedef vector<ll> vll
+typedef vector<pll> vpll
+typedef vector<pii> vpii
+typedef set<int> Si
+typedef set<ll> Sll
+typedef set<pii> Spii
+typedef set<pll> Spll
+typedef map<int, int> Mii
+typedef map<ll, ll> Mll
+typedef vector<vi> vvi
+typedef vector<vll> vvll
+const int mod = 1'000'000'007
+const int pi = 3.1415926535897932384626
+const int e = 2.71828182845904523536
+
+
+
+void solve(){
+    
+    
+}
+
+
+int main(){
+    ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL);
+    
+    int t;
+    cin >> t;
+    while (t--){
+        solve();
+        
+    }
+    return 0;
+}
+
+
+
