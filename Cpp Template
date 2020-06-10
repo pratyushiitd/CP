@@ -8,6 +8,7 @@ using namespace std;
 #define ld long double
 #define all(x) x.begin(), x.end()
 #define is_sorted(v) std::is_sorted(v.begin(), v.end())
+#define pb push_back
 
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
@@ -23,7 +24,7 @@ typedef map<int, int> Mii;
 typedef map<ll, ll> Mll;
 typedef vector<vi> vvi;
 typedef vector<vll> vvll;
-const int mod = 1'000'000'007;
+const int mod = 1000000007;
 const int pi = 3.1415926535897932384626;
 const int e = 2.71828182845904523536;
 
