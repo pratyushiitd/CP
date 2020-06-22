@@ -33,7 +33,7 @@ const int e = 2.71828182845904523536;
 
 bool visited[100001];
 vi adj[100001];
-int distance[100001];
+int Distance[100001];
 queue<int> q;
 
 void dfs(int s){
@@ -48,7 +48,7 @@ void dfs(int s){
 
 void bfs(int s){
     visited[s] = true;
-    distance[s] = 0;
+    Distance[s] = 0;
     q.push(s);
     while (!q.empty()) {
         int s = q.front(); q.pop();
@@ -58,7 +58,7 @@ void bfs(int s){
                 continue;
             }
             visited[u] = true;
-            distance[u] = distance[s]+1;
+            Distance[u] = Distance[s]+1;
             q.push(u);
         }
     }
