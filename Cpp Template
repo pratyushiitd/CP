@@ -2,6 +2,7 @@
 using namespace std;
 
 #define get_ch getchar_unlocked
+#define test int t;cin>>t;while(t--)
 #define fo(i, n) for(int i=0; i<n; i++)
 #define Fo(i, k, n) for(int i=k; i<n; i++)
 #define ll long long
@@ -30,7 +31,38 @@ const int mod = 1000000007;
 const int pi = 3.1415926535897932384626;
 const int e = 2.71828182845904523536;
 
+bool visited[100001];
+vi adj[100001];
+int distance[100001];
+queue<int> q;
 
+void dfs(int s){
+    if (visited[s]){
+        return;
+    }
+    visited[s]=true;
+    for(auto x:adj[s]){
+        dfs(x);
+    }
+}
+
+void bfs(int s){
+    visited[s] = true;
+    distance[s] = 0;
+    q.push(s);
+    while (!q.empty()) {
+        int s = q.front(); q.pop();
+
+        for (auto u : adj[s]) {
+            if (visited[u]){
+                continue;
+            }
+            visited[u] = true;
+            distance[u] = distance[s]+1;
+            q.push(u);
+        }
+    }
+}
 
 void solve(){
     
@@ -40,14 +72,8 @@ void solve(){
 int main(){
     ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL);
     
-    int t;
-    cin >> t;
-    while (t--){
+    test{
         solve();
-        
     }
     return 0;
 }
-
-
-
