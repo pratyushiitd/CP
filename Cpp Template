@@ -3,8 +3,7 @@ using namespace std;
 
 #define get_ch getchar_unlocked
 #define test int t;cin>>t;while(t--)
-#define fo(i, n) for(int i=0; i<n; i++)
-#define Fo(i, k, n) for(int i=k; i<n; i++)
+#define fo(i, k, n) for(int i=k; i<n; i++)
 #define ll long long
 #define ld long double
 #define all(x) x.begin(), x.end()
