@@ -1,9 +1,8 @@
-#include <bits/stdc++. h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-#test int t; cin>> t; while (t--)
-#define fo(i, n) for (int i = 0; i < n; i++)
+#define test int t; cin>> t; while (t--)
 #define fo(i, k, n) for (int i = k; i < n; i++)
 #define ll long long
 #define ld long double
@@ -28,13 +27,13 @@ typedef map<ll, ll> Mll;
 typedef vector<vi> vvi;
 typedef vector<vll> vvll;
 
-const int mod = 10e9 + 7;
+const int mod = 1000000007;
 const double pi = 3.1415926535897932384626;
 const double e = 2.71828182845904523536;
 
-bool visited[10e5 + 1];
-vector<int> adj[10e5 + 1];
-int Distance[10e5 + 1];
+bool visited[100001];
+vector<int> adj[100001];
+int Distance[100001];
 
 void dfs(int s)
 {
@@ -65,7 +64,7 @@ void bfs(int s)
             {
                 visited[x] = true;
                 Distance[x] = Distance[s] + 1;
-                q.push(u);
+                q.push(x);
             }
         }
     }
@@ -86,7 +85,7 @@ bool is_prime(int n)
     return true;
 }
 
-pair<int, int> extremes_array(int arr[], n)
+pair<int, int> extremes_array(int arr[],int n)
 {
     int min = arr[0];
     int max = arr[0];
@@ -106,12 +105,13 @@ pair<int, int> extremes_array(int arr[], n)
 
 void solve()
 {
+
 }
 
 int main()
 {
     ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL);
     //solve();
-    test{solve()};
+    test{solve();}
     return 0;
 }
