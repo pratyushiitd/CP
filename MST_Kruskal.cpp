@@ -1,3 +1,4 @@
+//https://www.programiz.com/dsa/kruskal-algorithm
 #include <bits/stdc++.h>
 
 using namespace std;
