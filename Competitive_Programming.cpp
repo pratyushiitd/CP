@@ -12,6 +12,10 @@ using namespace std;
 #define is_sorted(v) std::is_sorted(all(v))
 #define pb push_back
 #define pf push_front
+#define in(a) int a; cin >> a
+#define st(a) string a; cin >> a
+#define in(a,n) int arr[n]; fo(i, 0, n)cin >> arr[i]
+#define st(a,n) string arr[n]; fo(i, 0, n) cin >> arr[i]
 
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
