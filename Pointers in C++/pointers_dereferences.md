@@ -59,5 +59,23 @@ int *tommy;
 ```
 that is incorrect.
 
-char * terry = "hello";
+char * terry = "hello";\
 *(terry+4) = terry[4] = 'o';
+
+## Pointer Arithmetics:
+
+Suppose that we define three pointers in this compiler:\
+char *mychar;\
+short *myshort;\
+long *mylong;\
+
+and that we know that they point to memory locations 1000, 2000 and 3000 respectively.\
+So if we write:\
+mychar++;\
+myshort++;\
+mylong++;\
+
+mychar, as you may expect, would contain the value 1001. But not so obviously, myshort would contain the value\
+2002, and mylong would contain 3004, even though they have each been increased only once. The reason is that\
+when adding one to a pointer we are making it to point to the following element of the same type with which it has\
+been defined, and therefore the size in bytes of the type pointed is added to the pointer.
