@@ -72,11 +72,11 @@ long *mylong;
 ```
 
 and that we know that they point to memory locations 1000, 2000 and 3000 respectively.\
-So if we write:\
+So if we write:
 ```cpp
-mychar++;\
-myshort++;\
-mylong++;\
+mychar++;
+myshort++;
+mylong++;
 ```
 mychar, as you may expect, would contain the value 1001. But not so obviously, myshort would contain the value\
 2002, and mylong would contain 3004, even though they have each been increased only once. The reason is that\
