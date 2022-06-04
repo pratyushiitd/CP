@@ -31,3 +31,19 @@ int main ()
   return 0;
 }
 ```
+
+## Decalaring Pointers
+
+When declaring pointers we may want to explicitly specify which variable we want them to point to: \
+
+```cpp
+int number;
+int *tommy = &number;
+```
+
+The behavior of this code is equivalent to:\
+```cpp
+int number;
+int *tommy;
+tommy = &number;
+```
