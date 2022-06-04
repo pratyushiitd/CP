@@ -1,7 +1,7 @@
 ## Reference(&): 
 
-Address that locates a variable within a memory
-'&': address of
+Address that locates a variable within a memory \
+'&': address of \
 a = &b = address of b
 
 ## Pointer:
@@ -14,9 +14,9 @@ Used to directly access the value stored in a variable using it's pointer
 
 ```cpp
 #include <iostream>
-  using namespace std;
-  int main ()
-  {
+using namespace std;
+int main ()
+{
   int firstvalue = 5, secondvalue = 15;
   int * p1, * p2;
   p1 = &firstvalue; // p1 = address of firstvalue
