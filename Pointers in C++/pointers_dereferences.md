@@ -47,3 +47,14 @@ int number;
 int *tommy;
 tommy = &number;
 ```
+At the moment of declaring a pointer, the \
+asterisk (*) indicates only that it is a pointer, it is not the dereference operator (although both use the same sign: \
+*). Remember, they are two different functions of one sign. Thus, we must take care not to confuse the previous \
+code with:
+
+```cpp
+int number;
+int *tommy;
+*tommy = &number;
+```
+that is incorrect.
