@@ -58,3 +58,6 @@ int *tommy;
 *tommy = &number;
 ```
 that is incorrect.
+
+char * terry = "hello";
+*(terry+4) = terry[4] = 'o';
