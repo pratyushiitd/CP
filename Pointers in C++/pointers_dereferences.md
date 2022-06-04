@@ -82,3 +82,22 @@ mychar, as you may expect, would contain the value 1001. But not so obviously, m
 2002, and mylong would contain 3004, even though they have each been increased only once. The reason is that\
 when adding one to a pointer we are making it to point to the following element of the same type with which it has\
 been defined, and therefore the size in bytes of the type pointed is added to the pointer.
+
+## Precedence
+
+Both the increase (++) and decrease (--) operators have greater operator precedence than the dereference
+operator (*).
+
+If we write:
+```cpp
+*p++ = *q++;
+```
+
+Because ++ has a higher precedence than *, both p and q are increased, but because both increase operators (++)\
+are used as postfix and not prefix, the value assigned to *p is *q before both p and q are increased. And then both\
+are increased. It would be roughly equivalent to:
+```cpp
+*p = *q;
+++p;
+++q;
+```
