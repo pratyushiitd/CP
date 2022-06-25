@@ -1,5 +1,6 @@
 vector<int> lps_array(string pat)
 {
+    // lps[i] -> length of longest prefix which is also a suffix in pat[0...i]
     vector<int> vec(pat.length());
     int i = 1, j = 0;
     vec[0] = 0;
