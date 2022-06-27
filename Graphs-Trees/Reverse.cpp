@@ -19,6 +19,7 @@ int main(void)
         type[{a,b}] = 1;
         if (type[{b,a}]!=1)type[{b,a}] = 2;
     }
+    
     deque<int> dq;
     memset(visited, 0, sizeof(visited));
     dq.push_front(1);
