@@ -32,7 +32,7 @@ int32_t main(){
     int sum_of_primes[MAX+1];
     memset(sum_of_primes, 0, sizeof(sum_of_primes));
     sum_of_primes[2] = 2;
-    for(int i = 2; i*i <= MAX; i++){
+    for(int i = 2; i <= MAX; i++){
         if (is_prime[i]){
             for(int j = i; j <= MAX; j+=i)sum_of_primes[j] += i;
         }
@@ -41,3 +41,4 @@ int32_t main(){
         cout << arr[i] << ' ' << sum_of_primes[arr[i]] << endl;
     }
 }
+
