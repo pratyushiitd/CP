@@ -1,6 +1,7 @@
-# Number Theory - 4
+Number Theory - 4
                   
-## Euler Totient Function:-
+Euler Totient Function:-
+
 phi(n) = count of numbers from 1 to n that are coprime with n.
 Coprime:- 2 numbers x and y are coprime if gcd(x,y)=1.
 phi (2)=1 (1)
