@@ -1,0 +1,54 @@
+# Number Theory - 4
+                  
+## Euler Totient Function:-
+phi(n) = count of numbers from 1 to n that are coprime with n.
+Coprime:- 2 numbers x and y are coprime if gcd(x,y)=1.
+phi (2)=1 (1)
+phi(4)=2   (1,3)
+phi(8)=4 (1,3,5,7)
+Number p -> prime number
+phi(p) -> 1….p-1 = p-1
+phi(p^2) -> p^2-p
+9 -> 3^2 ->3,6,9 = 9/3 = p^2/p
+phi(p^k) -> p^k -> p,2*p,3*p,4*p...p^k -> p^(k-1)
+p^k = p+(n-1)*p
+p^(k-1) = 1+n-1
+N = p^(k-1)
+phi(p^k) = p^k-p^(k-1)
+N = (p1^k1).(p2^k2)....
+Where p1,p2,... are prime numbers.
+phi(a*b) = phi(a).phi(b) if a and b are coprime.
+phi(n) = phi(p1^k1 . p2^k2 ….)
+Phi(n) = phi(p1^k1).phi(p2^k2).....
+phi(n) = (p1^k1-p1^(k1-1))*(p2^k2-p2^(k2-1))....
+	  = {p1^k1.p2^k2…}(1-1/p1)(1-1/p2).....
+	  =  n*(1-1/p1)*(1-1/p2)....
+	  = n *pi{1-1/pi}
+
+Int phi[1000001];
+for(int i=0;i<=1e6;i++){
+	phi[i]=i;
+}
+for(int i=2;i<=1e6;i++){
+	if(phi[i]==i){
+		for(int j=i;j<=1e6;j+=i){
+			Phi[j] = phi[j]-phi[j]/i;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
