@@ -1,0 +1,51 @@
+       Number Theory - 5
+
+(a+b)%m = ((a%m)+(b%m))%m;
+(a/b)%m = ((a%m)*((b^-1)%m))%m;
+
+Today’s goal is to calculate (b^-1)%m.
+-> Modulo inverse of b.
+
+Modulo Multiplicative Inverse.
+
+(a*x)%n = 1
+Then it is known as the modulo inverse of a w.r.t n = x = (a^-1).
+And   1<=x<=(n-1)
+And it will exist only when gcd(a,n)=1;
+
+When ever you found gcd(a,n)=1 then you may write it like
+a*x+n*y=1;
+
+Here 
+x-> modulo inverse of a w.r.t n = (a^-1)%n;
+	Take modulo w.r.t n on LHS and RHS then
+		(a*x)%n = 1
+y-> modulo inverse of n w.r.t a;
+	Take modulo w.r.t a on LHS and RHS then
+		(n*y)%a = 1
+
+
+
+
+Important Property
+	(a^ETF(p))%p = 1 (always)
+		Where a and p are coprime i.e gcd(a,p)=1;
+
+	If p is a prime number then ETF(p) = p-1;
+		
+		(a^(p-1))%p = 1 (Fermat's Little Theorem)
+		(a*(a^(p-2))*)%p = 1;
+		-> (a*x)%p=1 where x=a^-1
+	So x = a^(p-2)
+	     [(a^(-1))%p = (a^(p-2))%p][
+
+-> Final outcome-> 
+modulo inverse of a w.r.t m((a^-1)%m) is equal to ((a^(m-2))%m; [m is prime number].
+
+	x=(a^-1)%m; 1<=x<=(m-1)
+
+
+Last property-> (a^z)%m = (a^(z%ETF(m)))%m;
+
+Note-> In 99% of the cases you would find m as a prime number.
+Find modulo with m = 10e9+7; (prime number);
