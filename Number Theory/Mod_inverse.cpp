@@ -7,14 +7,14 @@ int binexp(int a, int x, int m){
   if (x <= 1)return x==0? 1: a%m;
   if (x%2){
     int y = binexp(a, x/2, m) % m;
-    y*=y%m;
-    y*=a%m;
+    y=(y*y)%m;
+    y=(y*a)%m;
     return y%m;
     }
   else {
     int y = binexp(a, x/2, m) % m;
-    y*=y%m;
-    return y%m;
+    y=(y*y)%m;
+    return y;
   }
   
 }
