@@ -1,4 +1,5 @@
 // https://codeforces.com/edu/course/2/lesson/2/1
+
 #include <bits/stdc++.h>
 
 using namespace std;
