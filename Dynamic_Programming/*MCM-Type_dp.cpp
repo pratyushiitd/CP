@@ -1,4 +1,5 @@
 // https://www.spoj.com/problems/MIXTURES/
+// Useful when you are required to combine all elements to a single one
 
 #include <bits/stdc++.h>
 
