@@ -2,3 +2,5 @@
 ##### Dijksta => Positive weight edges Directed / Undirected
 
 ##### SCC-Condensed graph is DAG 
+
+###### Finding SCC- Kosaraju
