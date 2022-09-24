@@ -95,7 +95,7 @@ void solve(){
         k = max(k-1, (int64_t)0);
     }
     int diff_substr = n-p[0]-1;
-    for(int i = 1; i < n; i++)diff_substr+=n-p[i]-1 - lcp[i];
+    for(int i = 1; i < n; i++)diff_substr+=n-p[i]-1 - lcp[i]; // length of current suffix is n-1 - p[i]
     cout << diff_substr<< endl;
 }
 int32_t main(){
